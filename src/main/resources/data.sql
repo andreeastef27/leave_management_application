@@ -1,0 +1,28 @@
+insert into employee(id, name, address, email)
+values ('2', 'Jack', 'USA', 'jack@gmail.com');
+-- insert into vacation_type(type) values('Concediu de odihna');
+-- insert into vacation_type(type) values('Eveniment supraveghere copii');
+-- insert into vacation_type(type) values('Absenta neplatita');
+-- insert into vacation_type(type) values('Concediu fara plata');
+-- insert into vacation_type(type) values('Absenta neplatita(ore)');
+-- insert into vacation_type(type) values('Absenta preaviz');
+-- insert into vacation_type(type) values('Absenta suspendare');
+-- insert into vacation_type(type) values('Medical neplatit');
+-- insert into vacation_type(type) values('Delegatie');
+-- insert into vacation_type(type) values('Eveniment deosebit (ore)');
+-- insert into vacation_type(type) values('Timp liber');
+-- insert into vacation_type(type) values('Munca de acasa');
+-- insert into vacation_type(type) values('Training extern(ore)');
+-- insert into vacation_type(type) values('Zi de nastere');
+-- insert into vacation_type(type) values('Vaccinare COVID');
+-- insert into vacation_type(type) values('Zi libera autorecenzare');
+--
+-- insert into department(name_of_department) values('Customer Service');
+-- insert into department(name_of_department) values('Administration');
+-- insert into department(name_of_department) values('Marketing');
+-- insert into department(name_of_department) values('Finance');
+-- insert into department(name_of_department) values('Human Resources');
+--
+-- insert into users(department_id, name, surname, marca, role) values(3, 'Bill', 'Smith', '1111', 'USER');
+-- insert into users(department_id, name, surname, marca, role) values(4, 'Will', 'Smith', '2222', 'ADMIN');
+-- insert into users(department_id, name, surname, marca, role) values(5, 'Cliff', 'Smith', '3333', 'MANAGER');

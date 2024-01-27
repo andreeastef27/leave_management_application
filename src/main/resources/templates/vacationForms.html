@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vacation form management system</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Vacation form management system</a>
+      <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" th:href="@{/api/vacationForm/getAll}">Vacation forms</a>
+              </li>
+          </ul>
+      </div>
+</nav>
+<div class="container">
+      <div class="row">
+         <h1>List of Vacation Forms</h1>
+      </div>
+      <table class="table table-striped table-bordered">
+          <thead class="table-dark">
+          <tr>
+              <th>Vacation form Id</th>
+              <th>User Id</th>
+              <th>Vacation Id</th>
+              <th>Start date</th>
+              <th>Stop date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="vacationForm: ${vacationForms}">
+              <td th:text="${vacationForm.getFormId()}"></td>
+              <td th:text="${vacationForm.getUserId()}"></td>
+              <td th:text="${vacationForm.getVacationId()}"></td>
+              <td th:text="${vacationForm.getStartDate()}"></td>
+              <td th:text="${vacationForm.getStopDate()}"></td>
+          </tr>
+          </tbody>
+      </table>
+      <div class="row">
+          <div class="col-lg-3">
+              <a class="btn btn-primary btn-sm mb-3" th:href="@{/api/vacationForm/newVacationForm}">Add Vacation Form</a>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
